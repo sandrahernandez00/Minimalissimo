@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minimalissimo.shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root {
+            --griscc: #EFEFEF;
+            --grisc: #E6E6E6;
+            --griso: #696969;
+            }
+        *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 270px;
+            padding: 0 20px;
+        }
+        h1{
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--grisc);
+        }
+        h1 img{
+            width: 40px;
+            height: 40px;
+        }
+        h2{
+            padding: 80px 0 0 0;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: 400;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            border-bottom: 1px solid black;
+        }
+        .container{
+            display: grid;
+            grid-gap: 20px;
+            grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+        }
+        .cont_img{
+            background-color: var(--griscc);
+            flex-grow: 1;
+        }
+        main figure:first-child{
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            padding: 0.2em;
+        }
+        figure figcaption {
+            font-size: 1.5em;
+            padding: 0.2em;
+        }
+        figure p {
+            color: var(--griso);
+            font-size: 0.85em;
+        }
+        blockquote{
+            border-top: 1px solid var(--grisc);
+            border-bottom: 1px solid var(--grisc);
+            padding: 100px 0;
+            margin: 40 0 0 0;
+        }
+        blockquote p{
+            text-align: center;
+        }
+        menu{
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0 30px 0;
+        }
+        @media only screen and (max-device-width : 480px) {
+            body{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 1.85em;
+            }
+            .container{
+                grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+            }
+        }
+        @media only screen and (max-device-width : 481px) and (max-device-width : 1024px){
+            body{
+                font-size: 18px;
+            }
+            .container{
+                grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo.png"
+            alt="minimalissimo_logo"></h1>
+            <h2>Minimal &amp; Mindful Curation</h2>
+    </header>
+    <main class="container">
+        <figure>
+           <div class="cont_img">
+                <img src="img/Minimalissimo%20N%C2%B03.jpeg" alt="">
+            </div>
+            <div class="cont_text">
+                <figcaption>Minimalissimo Nº3</figcaption>
+                <p>GBP 12.00</p>
+            </div>
+        </figure>
+        <figure>
+           <div class="cont_img">
+                <img src="img/Minimalissimo%20N%C2%BA2%20(Digital).jpeg" alt="">
+            </div>
+            <div class="cont_text">
+                <figcaption>Minimalissimo Nº2 (Digital)</figcaption>
+                <p>GBP 3.00</p>
+            </div>
+        </figure>
+        <figure>
+           <div class="cont_img">
+                <img src="img/Blloc%20Zero18.jpeg" alt="">
+            </div>
+            <div class="cont_text">
+                <figcaption>Blloc Zero18</figcaption>
+                <p>GBP 325.00</p>
+            </div>
+        </figure>
+        <figure>
+           <div class="cont_img">
+                <img src="img/Minimalist%20Writer.jpeg" alt="">
+            </div>
+            <div class="cont_text">
+                <figcaption>Minimalist Writer</figcaption>
+                <p>GBP 10.00</p>
+            </div>
+        </figure>
+        <figure>
+           <div class="cont_img">
+                <img src="img/Minimalissimo%20Watch.jpeg" alt="">
+            </div>
+            <div class="cont_text">
+                <figcaption>Minimalissimo </figcaption>
+                <p>GBP 140.00</p>
+            </div>
+        </figure>
+        <figure>
+           <div class="cont_img">
+                <img src="img/minim_6.jpeg" alt="">
+            </div>
+            <div class="cont_text">
+                <figcaption>Minimalist Writer II</figcaption>
+                <p>GBP 10.00</p>
+            </div>
+        </figure>
+    </main>
+    <footer>
+        <blockquote>
+            <p><a href="#">Minimalissimo</a> is a magazine and creative studio dedicated to minimalism in art and design</p>
+        </blockquote>
+        <menu>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+        </menu>
+    </footer>
+</body>
+</html>
